@@ -1,0 +1,35 @@
+/* styles.css */
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #000428, #004e92);
+}
+
+canvas {
+    display: block;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 0.3; }
+}
+
+.star {
+    position: absolute;
+    background: white;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    animation: twinkle 1.5s infinite alternate;
+}
+
+.moon {
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at 30% 30%, #fdfcdc, #c9c9c9);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 200, 0.8);
+}

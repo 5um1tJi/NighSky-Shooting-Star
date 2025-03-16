@@ -73,13 +73,11 @@ document.body.appendChild(moon);
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Twinkling Stars
     stars.forEach(star => {
         star.update();
         star.draw();
     });
 
-    // Shooting Stars
     shootingStars.forEach((s, index) => {
         s.update();
         s.draw();
@@ -95,7 +93,6 @@ function animate() {
 
 animate();
 
-// Resize event
 window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
